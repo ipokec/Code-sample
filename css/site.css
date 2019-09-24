@@ -1,0 +1,227 @@
+﻿body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.popover {
+    background-color: #cec9c9ad;
+    border: 5px double #cec9c9ad;
+    border-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color: white;
+}
+
+.selected {
+    background-color: #097cbcbd;
+    border-color: #097cbcbd;
+}
+
+    .selected .popover-header {
+        background-color: #005075d9 !important;
+        border-color: #005075d9 !important;
+    }
+
+.popover .popover-header {
+    background-color: #0084c27d;
+    border-color: #0084c27d;
+    border-top-right-radius: 25px;
+    font-size: 15px;
+}
+
+.popover .arrow {
+    display: none;
+}
+
+.popover .popover-body {
+    display: inline-block;
+    width: 185px;
+}
+
+.popover .element {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin: 5%;
+    text-align: center;
+    color: white;
+    font-weight: 420;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.popover .detected-alarms {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-weight: 420;
+}
+
+    .popover .detected-alarms .alert {
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+        .popover .detected-alarms .alert i {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .popover .detected-alarms .alert div {
+            display: inline-block;
+        }
+
+.popover .element i {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.popover .element div {
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+#main-app {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+    #main-app img {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    #main-app i {
+        color: #696969;
+    }
+
+#mineTruck {
+    position: absolute;
+    top: 12%;
+    left: 37%;
+}
+
+#bagger {
+    position: absolute;
+    top: 64%;
+    left: 78%;
+}
+
+#driller {
+    position: absolute;
+    top: 30%;
+    left: 76%;
+}
+
+#wheelLoaders {
+    position: absolute;
+    top: 79%;
+    left: 24%;
+}
+
+#roller {
+    position: absolute;
+    top: 84%;
+    left: 57%;
+}
+
+#detail-view {
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+}
+
+    #detail-view .header-information-view {
+        background-color: #097cbc;
+        width: 100%;
+        height: 15%;
+    }
+
+        #detail-view .header-information-view .white-border {
+            display: inline-block;
+            height: 100%;
+            border-left-style: solid;
+            border-left-color: #ffffff1f;
+            border-left-width: 1px;
+        }
+
+        #detail-view .header-information-view .element {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(16.66% - 1px);
+            /*margin: 1%;*/
+            height: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            color: white;
+            font-weight: 420;
+            padding: 5px;
+        }
+
+            #detail-view .header-information-view .element i {
+                width: 100%;
+                text-align: center;
+                color: white;
+            }
+
+            #detail-view .header-information-view .element div {
+                border-radius: 20px;
+            }
+
+    #detail-view .center-interactive-view {
+        width: 100%;
+        height: 60%;
+    }
+
+    #detail-view .bottom-information-view {
+        width: 100%;
+        height: 25%;
+        background-color: #097cbc;
+    }
+
+        #detail-view .bottom-information-view .sensor-detail-view {
+            width: calc(25% - 6px);
+            margin-left: 5px;
+            margin-top: 5px;
+            display: inline-block;
+            vertical-align: top;
+            height: calc(50% - 8px);
+            background-color: white;
+            border-radius: 2px;
+        }
+
+            #detail-view .bottom-information-view .sensor-detail-view .sensor-image {
+                max-width: 30%;
+                height: 50%;
+                padding: 2px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            #detail-view .bottom-information-view .sensor-detail-view .sensor-data {
+                width: 70%;
+                max-height: 50%;
+                display: inline-block;
+                font-size: smaller;
+            }
+
+            #detail-view .bottom-information-view .sensor-detail-view .raw-data {
+                width: 100%;
+                height: 50%;
+                font-size: smaller;
+                padding-left: 5px;
+            }
